@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Framework -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Librairies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
+        <script src="assets/js/libs/confetti.min.js" defer></script>
+    <!-- APIs -->
+    <!-- style -->
+        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Javascript -->
+        <script src="assets/js/app_page2.js" defer></script>
+    <title>Movie's - Rechercher votre film</title>
+</head>
+<body class="bg-dark">
+<!-- Bootstrap -->
+<header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" aria-label="menu">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/img/logo-movies.png" alt="Movie's" height="50">
+            </a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center fs-4 fw-light" id="navbarNav">
+                <ul class="navbar-nav ">
+                  <li class="nav-item mx-4">
+                    <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="index.html#films">Vos films</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="#">Rechercher</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" id="demo2">Connexion</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+</header>
+<main class="min-vh-100">
+    <div class="container mt-5">
+      
+      <h1 class="display-4 text-light">Rechercher parmi + de 100 000 films</h1>
+      
+        <form class="row my-5" id="search-form">
+
+            <div class="form-group col-md-6 col-lg-4">
+              <input type="text" class="form-control my-2 text-light" id="title" name="title" placeholder="Par titre" required>
+            </div>
+            <div class="form-group col-md-6 col-lg-4 ">
+              <input type="number" class="form-control my-2 text-light " id="year" name="year" placeholder="Par année">
+            </div>
+            <div class="form-group col-lg-4">
+              <select class="form-control my-2 form-select" id="type" name="type">
+                <option value="" selected>Par catégorie</option>
+                <option value="movie">Film</option>
+                <option value="series">Séries</option>
+                <option value="episode">Episode</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-outline-secondary  my-3 mx-auto col-4">Rechercher</button>
+                        
+            <div id="nbResult" class="text-center text-secondary"></div>
+          </form>
+
+          <div id="results" class="row justify-content-center">
+            
+          </div>  
+          
+          <nav id="pagination" class="row d-none justify-content-center" aria-label="pagination">
+              <div class="btn-group col-2 justify-content-center" id="page-num" role="group" aria-label="Basic example"></div>    
+          </nav>        
+    
+    </div>
+</main>
+<!-- Pied de page -->  
+<footer class="text-muted accordion bg-dark ">
+    <div class="container text-secondary">
+      <p class="float-end mb-1">
+        <a class="link-light" href="#">Revenir au menu</a>
+      </p>
+      <p class="mb-1 footer">Movie's &copy; Bootstrap by Alexandra Juredieu</p>
+      <p class="mb-5 footer">Que pensez vous de ce projet?</br> <a class="link-light" href="/">Evaluez</a> Alexandra Juredieu sur <a class="link-light" href="https://metis.afpa.fr/login/index.php">Métis</a>.</p>
+    </div>
+</footer>
+</body>
+</html> 

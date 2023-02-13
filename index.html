@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Framework -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Librairies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
+        <script src="assets/js/libs/confetti.min.js" defer></script>
+    <!-- APIs -->
+    <!-- style -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Javascript -->
+        <script src="assets/js/app.js" defer></script>
+    <title>Movie's - Home</title>
+</head>
+<body>
+<header class="bg-dark">
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/img/logo-movies.png" alt="Movie's" height="50">
+            </a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center fs-4 fw-light" id="navbarNav">
+                <ul class="navbar-nav ">
+                  <li class="nav-item mx-4">
+                    <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="#films">Vos films</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="recherche.html">Rechercher</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" id="demo">Connexion</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+<!-- Carroussel d'images -->
+    <section>
+        <div id="carouselExampleAutoplaying" class="container carousel carousel-fade " data-bs-ride="carousel">
+            <div class="carousel-inner rounded-5 shadow-4-strong">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="assets/img/black-panther.jpg" class="d-block w-100" alt="black-panther">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/img/wonder-woman.jpg" class="d-block w-100" alt="wonder-woman" >
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/img/raiponce.jpg" class="d-block w-100" alt="raiponce">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/img/kill-bill.jpg" class="d-block w-100" alt="kill-bill">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/img/harry-potter.jpg" class="d-block w-100" alt="harry-potter">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/img/john-wick.jpg" class="d-block w-100" alt="john-wick">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>      
+    </section>
+</header>
+ 
+
+<main class="bg-dark py-5">
+<!--Titre Categorie  -->
+    <div class="container">
+        <h1 class="display-6 text-center text-light my-5">Retrouvez vos films par catégories</h1>
+    </div>
+<!-- Bloc categorie 1 -->
+    <div class="row bg-dark justify-content-center mx-auto mb-lg-4">
+        <div class="col-lg-2 col-md-3 col-6 my-3 text-center">
+            <img src="assets/img/serie.png" class="rounded img-fluid" alt="...">
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 my-3 text-center">
+            <img src="assets/img/comedie.png" class="rounded img-fluid" alt="...">
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 my-3  text-center">
+            <img src="assets/img/cinema.png" class="rounded img-fluid" alt="...">
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 my-3  text-center">
+            <img src="assets/img/action.png" class="rounded img-fluid" alt="...">
+        </div>
+    </div>    
+<!-- Bloc categorie 2 -->        
+    <div class="row bg-dark justify-content-center mx-auto">    
+        <div class="col-lg-2 col-md-3 col-6 my-3 text-center">
+            <img src="assets/img/docs.png" class="rounded img-fluid" alt="...">
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 my-3 text-center">
+            <img src="assets/img/sports.png" class="rounded img-fluid" alt="...">
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 my-3 text-center">
+            <img src="assets/img/disney.png" class="rounded img-fluid" alt="...">
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 my-3 text-center">
+            <img src="assets/img/marvel.png" class="rounded img-fluid" alt="...">
+        </div>
+    </div>
+<!-- Titre Bibliotheque et bouton "Ajouter" -->
+    <div class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 id="films" class="display-4 text-light">Votre bibliothèque de films</h1>
+                </div>
+                <div class="col-12 align-items-end">
+                    <button type="button" class="btn btn-outline-secondary " id="add-film-btn">Ajouter</button>
+                </div>
+            </div>
+<!-- Explications -->
+            <p class="mb-5 text-light">Pour regarder des films hors ligne à tout moment, ajoutez les à votre bibliothèque. 
+                Les séries et films téléchargés peuvent être visionnés sur l'appareil utilisé pour le téléchargement et sont 
+                accessibles depuis n'importe quel profil lié à votre compte. Les téléchargements expirent au bout d'un certain temps, 
+                et le nombre de téléchargements annuels est limité pour certains titres. Après avoir regardé les titres, 
+                supprimez les téléchargements de votre appareil.</p>
+<!-- Input Filtre -->
+            <div class="row mb-5">
+                <div class="form-group col-lg-5 col-md-3">
+                    <select class="form-select"  id="select">
+                    <option value="default"selected>Filtrer par</option>
+                    <option value="name-asc">Titre (A-Z)</option>
+                    <option value="name-desc">Titre (Z-A)</option>
+                    <option value="years-asc">Année (Ordre Croissant)</option>
+                    <option value="years-desc">Année (Ordre Décroissant)</option>
+                    </select>
+            </div>
+<!-- Formulaire "Ajout d'un film" -->
+            <form class="d-none col-lg-5 border-secondary border-top border-bottom p-2"  id="add-film-form">
+                <h3 class="display-6 text-light" >Ajoutez votre film</h3>
+                    <div id="alerts" class="alert d-none" role="alert"><!--Injecté par JS --></div>
+                    <div id="formAjoutFilm"> 
+                    <div class="form-group">                          
+                        <label for="film-title">Titre</label>
+                        <input type="text" placeholder="Veuillez saisir le titre" class="form-control col-3" id="film-title">
+                    </div>
+                    <div class="form-group">
+                        <label for="film-year">Année</label>
+                        <input type="number" placeholder="Veuillez saisir l'année" class="form-control col-3" id="film-year">
+                    </div>
+                    <div class="form-group">
+                        <label for="film-author">Auteur</label>
+                        <input type="text" placeholder="Veuillez saisir le nom du réalisateur" class="form-control col-3 mb-3" id="film-author">
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-dark m-1" id="annul-film-btn">Annuler</button>
+                        <button type="submit" class="btn btn-secondary m-1" id="save-film-btn">Sauvegarder</button>
+                    </div>
+                </div>
+            </form>
+            <div id="alert-valide" class="col-6 alert alert-success d-none" role="alert">
+                <ul >
+
+                </ul>
+            </div> 
+        </div>
+<!-- Tableau des films -->
+            <table class="table table-dark table-sm table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Titre</th>
+                        <th scope="col">Année</th>
+                        <th scope="col">Réalisateur</th>
+                        <th scope="col"></th>
+                      </tr>
+                </thead>
+                <tbody id="liste-film">
+                   <!-- Injecté via JS... -->
+                </tbody>       
+            </table>
+        </div>
+    </div>
+</main>
+<!-- Pied de page -->  
+<footer class="text-muted py-5 bg-dark ">
+    <div class="container text-secondary">
+      <p class="float-end mb-1">
+        <a class="link-light" href="#">Revenir au menu</a>
+      </p>
+      <p class="mb-1">Movie's &copy; Bootstrap by Alexandra Juredieu</p>
+      <p class="mb-0">Que pensez vous de ce projet? <a class="link-light" href="">Evaluez</a> Alexandra Juredieu sur <a class="link-light" href="https://metis.afpa.fr/login/index.php">Métis</a>.</p>
+    </div>
+</footer>
+
+</body>
+</html> 
